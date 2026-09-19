@@ -3,3 +3,5 @@
 */.ipynb_checkpoints/*
 
 sample.txt
+spark-warehouse/*
+*/spark-warehouse/*
