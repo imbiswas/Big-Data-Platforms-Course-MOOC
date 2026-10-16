@@ -1,0 +1,12 @@
+# Best-effort local setup for browsing or editing the assignment notebooks.
+#
+# The supported way to work on and submit the assignments is the course Docker
+# image (hainingt/big_data_platforms:2026), because that is the environment the
+# auto-grader uses. See DOCKER.md. Use this file only if you cannot run Docker.
+#
+# Not covered here: Assignments/Graphframes/SocialGraph.ipynb also needs the
+# GraphFrames Python package AND its matching JVM package for your Spark version,
+# which the Docker image provides. Install those by hand if you need that notebook locally.
+
+-r requirements.txt
+pandas>=2.0

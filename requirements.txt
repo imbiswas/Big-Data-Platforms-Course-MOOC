@@ -1,0 +1,25 @@
+# Python dependencies for the lecture notebooks (Big_Data_Platforms_Lecture1..11.ipynb)
+#
+# Install into a virtual environment:
+#   python -m venv .venv
+#   source .venv/bin/activate          # Windows: .venv\Scripts\activate
+#   pip install -r requirements.txt
+#
+# PySpark needs a Java runtime on the machine (Java 8, 11, 17 or 21 for Spark 3.5.x).
+# Check with: java -version
+#
+# The graded assignments are NOT meant to be run from this file; use the course
+# Docker image instead (see DOCKER.md).
+
+jupyterlab>=4.0
+numpy>=1.26
+matplotlib>=3.8
+
+# Spark 3.5.6 is the version the course documentation links to
+# (https://spark.apache.org/docs/3.5.6/).
+pyspark==3.5.6
+
+# PySpark 3.5.x imports `distutils` (in pyspark.ml and DataFrame.toPandas()), and
+# Python 3.12 removed it from the standard library. setuptools provides a
+# replacement, so it is needed on Python 3.12 and newer.
+setuptools; python_version >= "3.12"
